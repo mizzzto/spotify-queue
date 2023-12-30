@@ -9,7 +9,7 @@ export const TrackRow = ({ track }: ITrackRowProps) => {
   return (
     <div className="track">
       <div className="albumThumbnail">
-        <img src={thumbnail(track)} />
+        <img src={thumbnail(track)} alt={`Thumbnail pic for ${track.name}`} />
       </div>
       <div className="trackDetails">
         {track.name}
