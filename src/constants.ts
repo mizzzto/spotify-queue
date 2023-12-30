@@ -1,9 +1,9 @@
 import { config } from './config';
 
-export const LOCAL_STORAGE_PREFIX = 'spotifyParty';
+export const LOCAL_STORAGE_PREFIX = 'spotifyQueue';
 export const LOCAL_STORAGE_AUTH_KEY = `${LOCAL_STORAGE_PREFIX}-Auth`;
 export const LOCAL_STORAGE_STATE_KEY = `${LOCAL_STORAGE_PREFIX}-State`;
-export const REDIRECT_URI = `${config.SPOTIFY_PARTY_CLIENT_URL}/`;
+export const REDIRECT_URI = `${config.SPOTIFY_QUEUE_CLIENT_URL}/`;
 
 export const HttpStatus = {
   OK: 200,

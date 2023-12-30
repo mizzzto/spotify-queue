@@ -3,7 +3,7 @@ import PowerOff from '@mui/icons-material/PowerOff';
 
 // @ts-ignore
 import spotifyLogo from '../../assets/Spotify_Icon_RGB_White.png';
-import partyLogo from '../../assets/party.png';
+import queueLogo from '../../assets/queue.png';
 import { useAuthContext } from '../../contexts/AuthContext';
 import { useMediaContext } from '../../contexts/MediaContext';
 import { ActionTypes } from '../../reducers/playerStateReducer';
@@ -33,7 +33,7 @@ const Header = () => {
               src={spotifyLogo}
               alt="Spotify Logo"
             />
-            <img className="party-logo" src={partyLogo} alt="Party Logo" />
+            <img className="queue-logo" src={queueLogo} alt="Queue Logo" />
           </div>
           <div className="header-right">
             {(auth.accessToken || code) && (

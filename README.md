@@ -21,7 +21,7 @@ Add a `.env` file to the root of your project. Populate it with these variables:
 VITE_SPOTIFY_CLIENT_ID=#get from developer.spotify.com
 VITE_SPOTIFY_ACCOUNTS_URL=https://accounts.spotify.com
 VITE_SPOTIFY_API_URL=https://api.spotify.com/v1
-VITE_SPOTIFY_PARTY_CLIENT_URL=http://localhost:5173
+VITE_SPOTIFY_QUEUE_CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 ```
 
