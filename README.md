@@ -6,7 +6,7 @@ This project is a result of numerous parties and frustration where a phone is pa
 
 ### Prerequisites
 
-Go developer.spotify.com and create a developer app which will provide you with a client ID. Detailed instructions [here](https://developer.spotify.com/documentation/web-api/tutorials/getting-started#create-an-app).
+Go to https://developer.spotify.com and create a developer app which will provide you with a client ID. Detailed instructions [here](https://developer.spotify.com/documentation/web-api/tutorials/getting-started#create-an-app).
 
 The developer app's Redirect URIs section should be populated with this:
 
