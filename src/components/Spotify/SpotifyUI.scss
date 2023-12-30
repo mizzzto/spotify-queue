@@ -1,0 +1,142 @@
+.footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  bottom: 0;
+  padding: 1.25em;
+  background-color: var(--bg-color-medium);
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  padding: 0.7em 1em 0.7em 1.2em;
+}
+
+.albumThumbnail {
+  display: flex;
+  align-items: center;
+  margin-right: 0.7em;
+}
+
+.albumThumbnail img {
+  max-height: 45px;
+  aspect-ratio: 1/1;
+}
+
+.footer .track {
+  padding: 0;
+  flex-grow: 1;
+  cursor: initial;
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+.footer .albumThumbnail img {
+  max-height: 50px;
+}
+
+.smallText {
+  font-size: 0.85em;
+  color: var(--text-color-dark);
+}
+
+.track-menu-container {
+  flex: 0;
+  cursor: pointer;
+  padding: 12px 8px;
+  display: block;
+}
+
+.track-menu-container:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.5) !important;
+}
+
+.track-menu-dot {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background-color: var(--text-color-dark);
+  border-radius: 50%;
+}
+
+.track-menu-dot:before,
+.track-menu-dot:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.track-menu-dot:before {
+  top: 7px;
+}
+
+.track-menu-dot:after {
+  bottom: 7px;
+}
+
+.player-menu-container {
+  flex: 0;
+  cursor: pointer;
+  padding: 12px 8px;
+  display: block;
+}
+
+.player-menu-container:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.5) !important;
+}
+
+.player-menu-dot {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background-color: var(--text-color-dark);
+  border-radius: 50%;
+}
+
+.player-menu-dot:before,
+.player-menu-dot:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.player-menu-dot:before {
+  top: 7px;
+}
+
+.player-menu-dot:after {
+  top: 14px;
+}
+
+.queue-alert {
+  position: fixed;
+  top: -11.3rem;
+  right: 50%;
+  transform: translatex(50%);
+  background-color: var(--bg-color-highlight);
+  transition: opacity 450ms ease-in-out;
+  padding: 1rem;
+  border-radius: 0.2em;
+}
+
+.visible {
+  top: 1.3rem;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,61 @@
+.dotmenu-container {
+  cursor: pointer;
+  padding: 1em;
+}
+
+.dotmenu-container:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.5) !important;
+}
+
+.dotmenu {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  background-color: var(--text-color-dark);
+  border-radius: 50%;
+}
+
+.dotmenu:before,
+.dotmenu:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.dotmenu:before {
+  right: 7px;
+}
+
+.dotmenu:after {
+  left: 7px;
+}
+
+.dotmenu-popup {
+  position: relative;
+  transition-duration: 0.4s;
+}
+
+.dotmenu-popup:after {
+  content: '';
+  background: #31c331;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.dotmenu-popup:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}

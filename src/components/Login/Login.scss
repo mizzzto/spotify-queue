@@ -1,0 +1,20 @@
+.login-container {
+  & a {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 0.75em 0.85em 0.75em 0.5em;
+  }
+  & a:hover {
+    background-color: var(--bg-color-light);
+    border-radius: 0.2em;
+  }
+  & a:focus {
+    outline: 1px solid var(--text-color-light);
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  padding: 0.75rem 1rem;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.spotify-logo {
+  width: min(10vw, 50px);
+}
+.party-logo {
+  width: min(150px, 20vw);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  max-width: 50%;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}

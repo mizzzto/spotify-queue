@@ -1,0 +1,60 @@
+@use 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color-dark);
+  color: var(--text-color-light);
+  font-family: var(--ff-body);
+  height: -webkit-fill-available;
+}
+
+header {
+  max-width: var(--container-max-width);
+  margin: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.btn {
+  border: 1px solid var(--input-bg-color);
+  border-radius: 0.4em;
+  padding: 0.5em 0.75em;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-light);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--bg-color-light);
+  outline: 1px solid purple;
+}
+
+.clickable-icon {
+  cursor: pointer;
+}
+
+.clickable-icon:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
